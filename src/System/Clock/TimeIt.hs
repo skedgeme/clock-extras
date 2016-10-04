@@ -12,7 +12,7 @@ elapsedTime action = do
   endTime   <- getTime Monotonic 
 
   let result = diffSeconds endTime startTime
-               
+
   return (r, result)
 
 -- | Subtract two TimeSpecs and return the result in seconds
