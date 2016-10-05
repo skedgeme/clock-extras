@@ -5,7 +5,7 @@
 module System.Clock.TimeIt where
 import System.Clock
 
-#if !MIN_VERSION_base(0,7,0)
+#if !MIN_VERSION_clock(0,7,0)
 -- This code is ripped out of System.Clock 0.7.1
 s2ns :: Num a => a
 s2ns = 10^(9 :: Int)
